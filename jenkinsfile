@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+    stages {
+        stage('Run tests') {
+            steps {
+                bat 'mvn clean install'
+            }
+        }
+    }
+    post {
+           always {
+            publishHTML target: [
+                  allowMissing: true,
+                  alwaysLinkToLastBuild: false,
+                  keepAll: true,
+                  reportDir: 'Reports/SparkReport',
+                  reportFiles: 'platorun_extent_test_report.html',
+                  reportName: 'Platorun Extent Spark Test Report'
+                ]
+            publishHTML target: [
+                              allowMissing: true,
+                              alwaysLinkToLastBuild: false,
+                              keepAll: true,
+                              reportDir: 'Reports/CucumberReport',
+                              reportFiles: 'platorun_cucumber_test_report.html',
+                              reportName: 'Platorun Cucumber Test Report'
+                            ]
+            junit 'Reports/CucumberReport/platorun_cucumber_test_report.xml'
+           }
+    }
+}

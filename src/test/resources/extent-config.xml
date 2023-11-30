@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+
+        <!-- enables timeline -->
+        <!-- defaults to true -->
+        <enableTimeline>true</enableTimeline>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>HTTPS</protocol>
+
+        <thumbnailForBase64>false</thumbnailForBase64>
+
+        <!-- title of the document -->
+        <documentTitle>Platorun</documentTitle>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName> Test Automation Report</reportName>
+
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline>Platorun</reportHeadline>
+
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+
+        <!-- global time format override -->   <!-- defaults to HH:mm:ss -->
+        <timeFormat>hh:mm:ss a</timeFormat>
+
+        <!-- Date/Time Stamp -->
+        <timeStampFormat>MMM dd, yyyy hh:mm:ss a</timeStampFormat>
+
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>top</testViewChartLocation>
+
+        <!-- settings to enable/disable views -->
+        <!-- professional version only -->
+        <!--
+        <enableCategoryView>true</enableCategoryView>
+        <enableAuthorView>true</enableAuthorView>
+        <enableExceptionView>true</enableExceptionView>
+        <enableTestRunnerLogsView>true</enableTestRunnerLogsView>
+        -->
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+
+                });
+            ]]>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

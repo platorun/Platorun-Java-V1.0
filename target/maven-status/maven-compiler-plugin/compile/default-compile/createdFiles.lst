@@ -1,0 +1,8 @@
+pageObjects\OnlineShoppingAppPage.class
+pageObjects\FacebookAppPage.class
+pageObjects\SQLServerDatabaseAppPage.class
+utils\JsonReader.class
+pageObjects\PageBase.class
+pageObjects\GoogleMapsAppPage.class
+pageObjects\MySQLDatabaseAppPage.class
+pageObjects\CalculatorAppPage.class

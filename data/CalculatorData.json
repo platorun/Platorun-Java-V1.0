@@ -1,0 +1,14 @@
+{
+  "Calculator Script": [
+    {
+      "OperatorType": "ADD",
+      "Operand1": "23",
+      "Operand2": "27"
+    },
+    {
+      "OperatorType": "MULTIPLY",
+      "Operand1": "12",
+      "Operand2": "13"
+    }
+  ]
+}

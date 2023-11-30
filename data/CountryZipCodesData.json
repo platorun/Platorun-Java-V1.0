@@ -1,0 +1,19 @@
+{
+  "Country Zip Codes": [
+    {
+      "CountryCode": "us",
+      "ZipCode": "90210",
+      "PlaceName": "Beverly Hills"
+    },
+    {
+      "CountryCode": "us",
+      "ZipCode": "12345",
+      "PlaceName": "Schenectady"
+    },
+    {
+      "CountryCode": "ca",
+      "ZipCode": "P6B",
+      "PlaceName": "Sault Ste. Marie Central"
+    }
+  ]
+}

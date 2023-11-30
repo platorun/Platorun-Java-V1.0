@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="68.963" tests="13" skipped="0" failures="1" errors="0">
+<testcase classname="API Testing" name="Place By Country and Zip Code - Example #1.1" time="1.891">
+<system-out><![CDATA[
+Given I need to know the name of a place by country and zip code............passed
+When I enter "us" as country code...........................................passed
+And I enter "90210" as zip code.............................................passed
+Then The API should provide me the exact place as "Beverly Hills"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Place By Country and Zip Code - Example #1.2" time="0.221">
+<system-out><![CDATA[
+Given I need to know the name of a place by country and zip code............passed
+When I enter "us" as country code...........................................passed
+And I enter "12345" as zip code.............................................passed
+Then The API should provide me the exact place as "Schenectady".............passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Place By Country and Zip Code - Example #1.3" time="0.218">
+<system-out><![CDATA[
+Given I need to know the name of a place by country and zip code............passed
+When I enter "ca" as country code...........................................passed
+And I enter "P6B" as zip code...............................................passed
+Then The API should provide me the exact place as "Sault Ste. Marie Central".passed
+]]></system-out>
+</testcase>
+<testcase classname="Android Google Maps" name="Map Navigation - Example #1.1" time="46.413">
+<system-out><![CDATA[
+Given The user search "46.51523,-84.29121" in Google Maps...................passed
+When The user enters "Your location" in the map.............................passed
+Then Google Maps should start navigating from "Your location" to "46.51523,-84.29121".passed
+]]></system-out>
+</testcase>
+<testcase classname="MySQL Database" name="MySQL DB Testing - Example #1.1" time="1.532">
+<system-out><![CDATA[
+Given I need to see all cities in a particular country......................passed
+When I enter "Canada" as parameter..........................................passed
+Then It should return all cities in that country............................passed
+]]></system-out>
+</testcase>
+<testcase classname="MySQL Database" name="MySQL DB Testing - Example #1.2" time="1.026">
+<system-out><![CDATA[
+Given I need to see all cities in a particular country......................passed
+When I enter "Philippines" as parameter.....................................passed
+Then It should return all cities in that country............................passed
+]]></system-out>
+</testcase>
+<testcase classname="MySQL Database" name="MySQL DB Testing - Example #1.3" time="1.028">
+<system-out><![CDATA[
+Given I need to see all cities in a particular country......................passed
+When I enter "India" as parameter...........................................passed
+Then It should return all cities in that country............................passed
+]]></system-out>
+</testcase>
+<testcase classname="MySQL Database" name="MySQL DB Testing - Example #1.4" time="1.028">
+<system-out><![CDATA[
+Given I need to see all cities in a particular country......................passed
+When I enter "Mexico" as parameter..........................................passed
+Then It should return all cities in that country............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Web UI Testing" name="Chrome Online Shopping - Example #1.1" time="10.92">
+<failure type="junit.framework.ComparisonFailure" message="expected:&lt;...K YOU FOR YOUR ORDER[]&gt; but was:&lt;...K YOU FOR YOUR ORDER[ 2]&gt;">
+<![CDATA[junit.framework.ComparisonFailure: expected:<...K YOU FOR YOUR ORDER[]> but was:<...K YOU FOR YOUR ORDER[ 2]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:44)
+	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
+	at ✽.A confirmation message "THANK YOU FOR YOUR ORDER 2" should be displayed on the screen(file:///C:/Alfredo/PythonVirtualEnv/AlfredoNatividad-PD56Qqbo/platorun.java/src/test/resources/features/OnlineShopping.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I want to purchase items online using Google Chrome...................passed
+And I login with my "standard_user" and "secret_sauce" credentials..........passed
+And I add "Sauce Labs Bike Light" to my cart................................passed
+And I checkout and fill in my "Johnny", "Bravo", "90210" shipping details...passed
+When I continue and click Finish............................................passed
+Then A confirmation message "THANK YOU FOR YOUR ORDER 2" should be displayed on the screen.failed
+]]></system-out>
+</testcase>
+<testcase classname="SQLServer Database" name="SQLServer DB Testing - Example #1.1" time="1.227">
+<system-out><![CDATA[
+Given I need to see all SQLServer cities in a particular country............passed
+When I enter "Canada" as SQLServer parameter................................passed
+Then It should return SQLServer cities in that country......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SQLServer Database" name="SQLServer DB Testing - Example #1.2" time="1.039">
+<system-out><![CDATA[
+Given I need to see all SQLServer cities in a particular country............passed
+When I enter "Philippines" as SQLServer parameter...........................passed
+Then It should return SQLServer cities in that country......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SQLServer Database" name="SQLServer DB Testing - Example #1.3" time="1.031">
+<system-out><![CDATA[
+Given I need to see all SQLServer cities in a particular country............passed
+When I enter "India" as SQLServer parameter.................................passed
+Then It should return SQLServer cities in that country......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SQLServer Database" name="SQLServer DB Testing - Example #1.4" time="1.024">
+<system-out><![CDATA[
+Given I need to see all SQLServer cities in a particular country............passed
+When I enter "Mexico" as SQLServer parameter................................passed
+Then It should return SQLServer cities in that country......................passed
+]]></system-out>
+</testcase>
+</testsuite>

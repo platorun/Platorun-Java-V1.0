@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-10T21:01:03Z" name="Suite" finished-at="2023-02-10T21:02:16Z" duration-ms="73653">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-10T21:01:03Z" name="Android" finished-at="2023-02-10T21:02:16Z" duration-ms="73653">
+      <class name="runner.AllFeaturesRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:03Z" name="setUpClass" finished-at="2023-02-10T16:01:04Z" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7bedc48a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:04Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:06Z" duration-ms="2048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place By Country and Zip Code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API Testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:06Z" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place By Country and Zip Code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API Testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:06Z" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place By Country and Zip Code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API Testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:52Z" duration-ms="46421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Map Navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Android Google Maps"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:52Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:54Z" duration-ms="1541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["MySQL DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MySQL Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:54Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:55Z" duration-ms="1034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["MySQL DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MySQL Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:56Z" duration-ms="1039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["MySQL DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MySQL Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:56Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:01:57Z" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["MySQL DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MySQL Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:01:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:02:08Z" duration-ms="10929" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Chrome Online Shopping"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web UI Testing"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...K YOU FOR YOUR ORDER[]> but was:<...K YOU FOR YOUR ORDER[ 2]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...K YOU FOR YOUR ORDER[]> but was:<...K YOU FOR YOUR ORDER[ 2]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:44)
+	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
+	at ✽.A confirmation message "THANK YOU FOR YOUR ORDER 2" should be displayed on the screen(file:///C:/Alfredo/PythonVirtualEnv/AlfredoNatividad-PD56Qqbo/platorun.java/src/test/resources/features/OnlineShopping.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:02:08Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:02:09Z" duration-ms="1233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SQLServer DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SQLServer Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:02:09Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:02:10Z" duration-ms="1043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SQLServer DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SQLServer Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:02:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:02:11Z" duration-ms="1035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SQLServer DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SQLServer Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:02:11Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-10T16:02:12Z" duration-ms="1033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SQLServer DB Testing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SQLServer Database"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.AllFeaturesRunner@4c12331b]" started-at="2023-02-10T16:02:12Z" name="tearDownClass" finished-at="2023-02-10T16:02:16Z" duration-ms="3964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.AllFeaturesRunner -->
+    </test> <!-- Android -->
+  </suite> <!-- Suite -->
+</testng-results>
