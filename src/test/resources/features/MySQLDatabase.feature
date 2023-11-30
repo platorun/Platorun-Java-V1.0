@@ -1,6 +1,6 @@
 Feature: MySQL Database
 
-  @MySQLDatabaseTesting @device_Windows @author_JohnDoe
+  @MySQLDatabaseTesting @device_Windows @author_Tester1
   Scenario Outline: MySQL DB Testing
     Given I need to see all cities in a particular country
     When I enter "<Country>" as parameter

@@ -1,6 +1,6 @@
 Feature: Android Calculator
 
-  @AppiumAndroidTesting @device_Android @author_AlfredoNatividad
+  @AppiumAndroidTesting @device_Android @author_Tester1
   Scenario Outline: Math Operations
     Given I have two numbers <Operator1> and <Operator2>
     When I "<DoMathOperation>" the two numbers

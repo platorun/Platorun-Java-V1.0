@@ -16,7 +16,7 @@ public class GoogleMapsSteps extends TestBase {
     GoogleMapsAppPage googleMapsAppPage;
     @Given("The user search {string} in Google Maps")
     public void theUserSearchADestinationInGoogleMaps(String arg0) throws MalformedURLException, Throwable {
-        androidSetUp("com.google.android.apps.maps","com.google.android.maps.MapsActivity","8200","4723","emulator-5554");
+        androidSetUp("com.google.android.apps.maps","com.google.android.maps.MapsActivity","8200","4724","emulator-5554");
         googleMapsAppPage = new GoogleMapsAppPage(TestBase.appiumDriver);
         googleMapsAppPage.openGoogleMaps();
         googleMapsAppPage.enterDestination(arg0);

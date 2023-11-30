@@ -1,6 +1,6 @@
 Feature: Android Facebook
 
-  @AppiumAndroidTesting @device_Android @author_AlfredoNatividad
+  @AppiumAndroidTesting @device_Android @author_Tester1
   Scenario Outline: Create New Account
     Given I want to create a new Facebook account
     And I enter "<FirstName>" as First Name
