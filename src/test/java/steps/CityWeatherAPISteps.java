@@ -1,14 +1,8 @@
 package steps;
 
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.JsonNode;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.mapper.ObjectMapper;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.ExtractableResponse;
-import org.apache.http.HttpStatus;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.testng.Assert;
@@ -18,21 +12,18 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static io.restassured.RestAssured.given;
-
 public class CityWeatherAPISteps {
-    String API_URL = "";
     String city = "";
     @Given("I need to know the weather of a specific City")
-    public void iNeedToKnowTheWeatherOfASpecificCity() throws Throwable {
+    public void iNeedToKnowTheWeatherOfASpecificCity() {
         
     }
     @When("I enter {string} as the City")
-    public void iEnterWorldCityAsTheCity(String arg0) throws Throwable {
+    public void iEnterWorldCityAsTheCity(String arg0) {
         city = arg0;
     }
-    @Then("The API should provide me the current temperature in Degrees Celcius")
-    public void theAPIShouldProvideMeTheCurrentTemperatureInDegreesCelcius() throws Throwable {
+    @Then("The API should provide me the current temperature in Degrees Celsius")
+    public void theAPIShouldProvideMeTheCurrentTemperatureInDegreesCelsius() throws Throwable {
         URL obj = new URL("https://api.api-ninjas.com/v1/weather?city=" + city);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");

@@ -4,7 +4,7 @@ Feature: Weather API Testing
   Scenario Outline: Weather By City
     Given I need to know the weather of a specific City
     When I enter "<WorldCity>" as the City
-    Then The API should provide me the current temperature in Degrees Celcius
+    Then The API should provide me the current temperature in Degrees Celsius
 
     Examples:
     | WorldCity        |
