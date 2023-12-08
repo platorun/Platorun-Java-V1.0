@@ -1,4 +1,4 @@
-Feature: Android Facebook
+Feature: Android Facebook Testing
 
   @AppiumAndroidTesting @device_Android @author_Tester1
   Scenario Outline: Create New Account

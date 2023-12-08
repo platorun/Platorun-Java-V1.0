@@ -1,6 +1,6 @@
-Feature: Android Google Maps
+Feature: Android Google Maps Testing
 
-  @AppiumAndroidTesting @device_Android @author_AlfredoNatividad
+  @AppiumAndroidTesting @device_Android @author_Tester1
   Scenario Outline: Map Navigation
     Given The user search "<Destination>" in Google Maps
     When The user enters "<Start Location>" in the map

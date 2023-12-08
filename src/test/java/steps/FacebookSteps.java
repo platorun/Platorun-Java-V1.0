@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjects.CalculatorAppPage;
 import pageObjects.FacebookAppPage;
 import tests.TestBase;
 
@@ -18,7 +17,7 @@ public class FacebookSteps {
     FacebookAppPage facebookAppPage;
     @Given("I want to create a new Facebook account")
     public void iWantToCreateANewFacebookAccount() throws MalformedURLException, Throwable {
-        androidSetUp("com.facebook.katana",".LoginActivity","8200","4723","emulator-5554");
+        androidSetUp("com.facebook.katana",".LoginActivity","8200","4724","emulator-5554");
         facebookAppPage = new FacebookAppPage(TestBase.appiumDriver);
         facebookAppPage.openFacebook();
     }
@@ -43,21 +42,18 @@ public class FacebookSteps {
 
     @And("I enter {string} as Gender")
     public void iEnterAGender(String arg0) throws Throwable {
-
         facebookAppPage.gender = arg0;
         facebookAppPage.selectGender();
     }
 
     @And("I enter {string} as Mobile Number")
     public void iEnterAMobileNumber(String arg0) throws Throwable {
-
         facebookAppPage.mobileNumber = arg0;
         facebookAppPage.enterMobileNumber();
     }
 
     @And("I enter {string} as Password")
     public void iEnterAPassword(String arg0) throws Throwable {
-
         facebookAppPage.password = arg0;
         facebookAppPage.enterPassword();
     }

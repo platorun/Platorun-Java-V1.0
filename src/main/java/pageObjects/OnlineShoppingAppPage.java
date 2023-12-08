@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
 public class OnlineShoppingAppPage extends PageBase {
 
     public OnlineShoppingAppPage(WebDriver webDriver) {
@@ -24,7 +23,6 @@ public class OnlineShoppingAppPage extends PageBase {
     }
     public void addItemsToCart(String inventoryItem) {
         clickWeb("LINKTEXT",inventoryItem);
-        //clickWeb("XPATH","//button[contains(text(),'Add to cart')]");
         clickWeb("CSS","*[data-test='add-to-cart-sauce-labs-bike-light']");
     }
 

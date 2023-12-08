@@ -21,8 +21,14 @@ public class SQLServerDatabaseAppPage extends PageBase {
     public void retrieveCitiesByCountry(String country) throws SQLException {
         worldCountry = country;
         allCities = new ArrayList<>();
+
+        /* Use this code for direct SQL statement
         allCities = executeSQLStatement("SELECT Name FROM city WHERE CountryCode = " +
                 "(SELECT Code FROM country WHERE Name = '" + country + "')");
+        */
+
+        //This code uses Stored Procedure Call
+        allCities = executeStoredProcedure("SP_Platorun_1", country);
     }
 
     public void showAlltheCities() {

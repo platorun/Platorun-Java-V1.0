@@ -25,7 +25,6 @@ public class GoogleMapsAppPage extends PageBase {
 
     public void enterDestination(String strLocation) {
         sendText(editBox, strLocation);
-        //xPath = "//android.widget.TextView[matches(@text,'" + strLocation + "','i')]";
         xPath = "//android.widget.TextView[@text,'" + strLocation + "']";
         clickByXPath(xPath);
         xPath = "//android.widget.Button[@text,'Directions']";
@@ -40,7 +39,6 @@ public class GoogleMapsAppPage extends PageBase {
         } else {
             xPath = "//android.widget.TextView[@text,'Choose start location']";
             clickByXPath(xPath);
-            //xPath = "//android.widget.EditText[@text,'" + startLocation + "']";
             sendTextByXPath(xPath, startLocation);
         }
 

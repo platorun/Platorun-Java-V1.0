@@ -1,11 +1,10 @@
 package runner;
 
 import io.cucumber.testng.CucumberOptions;
-import org.junit.runner.RunWith;
 import tests.TestBase;
 
 @CucumberOptions(
-        features="src/test/resources/features/GoogleMaps.feature",
+        features="src/test/resources/features/UniversalApp.feature",
         glue = {"steps"},
         plugin = {"pretty",
                 "html:Reports/CucumberReport/platorun_cucumber_test_report.html",
@@ -14,5 +13,5 @@ import tests.TestBase;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         tags = ("@AppiumAndroidTesting"))
-public class GoogleMapsRunner extends TestBase {
+public class UniversalAppRunner extends TestBase {
 }

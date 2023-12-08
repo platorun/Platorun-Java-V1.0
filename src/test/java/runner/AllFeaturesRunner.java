@@ -5,9 +5,12 @@ import tests.TestBase;
 
 @CucumberOptions(
         features= {"src/test/resources/features/GoogleMaps.feature",
+                "src/test/resources/features/Facebook.feature",
+                "src/test/resources/features/UniversalApp.feature",
                 "src/test/resources/features/MySQLDatabase.feature",
                 "src/test/resources/features/SQLServerDatabase.feature",
                 "src/test/resources/features/CountryZipCodeAPI.feature",
+                "src/test/resources/features/CityWeatherAPI.feature",
                 "src/test/resources/features/OnlineShopping.feature"},
         glue = {"steps"},
         plugin = {"pretty",

@@ -1,4 +1,4 @@
-Feature: SQLServer Database
+Feature: SQLServer Database Testing
 
   @SQLServerDatabaseTesting @device_Windows @author_Tester1
   Scenario Outline: SQLServer DB Testing

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Android</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 10 16:01:03 EST 2023</td>
+<td>Started on:</td><td>Thu Dec 07 15:53:52 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>73 seconds (73653 ms)</td>
+<tr><td>Total time:</td><td>143 seconds (143063 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,23 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Chrome Online Shopping", "Web UI Testing"</td>
-<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;...K YOU FOR YOUR ORDER[]&gt; but was:&lt;...K YOU FOR YOUR ORDER[ 2]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:85)
-	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:44)
-	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
-	at ✽.A confirmation message &quot;THANK YOU FOR YOUR ORDER 2&quot; should be displayed on the screen(file:///C:/Alfredo/PythonVirtualEnv/AlfredoNatividad-PD56Qqbo/platorun.java/src/test/resources/features/OnlineShopping.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1392267742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1392267742'><pre>junit.framework.ComparisonFailure: expected:&lt;...K YOU FOR YOUR ORDER[]&gt; but was:&lt;...K YOU FOR YOUR ORDER[ 2]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:85)
-	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:44)
-	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
-	at ✽.A confirmation message &quot;THANK YOU FOR YOUR ORDER 2&quot; should be displayed on the screen(file:///C:/Alfredo/PythonVirtualEnv/AlfredoNatividad-PD56Qqbo/platorun.java/src/test/resources/features/OnlineShopping.feature:10)
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Weather By City", "Weather API Testing"</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at steps.CityWeatherAPISteps.theAPIShouldProvideMeTheCurrentTemperatureInDegreesCelcius(CityWeatherAPISteps.java:59)
+	at ?.The API should provide me the current temperature in Degrees Celcius(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/CityWeatherAPI.feature:7)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace296628880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace296628880'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at steps.CityWeatherAPISteps.theAPIShouldProvideMeTheCurrentTemperatureInDegreesCelcius(CityWeatherAPISteps.java:59)
+	at ?.The API should provide me the current temperature in Degrees Celcius(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/CityWeatherAPI.feature:7)
 </pre></div></td>
-<td>10</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>0</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
+<tr>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Chrome Online Shopping", "Web UI Testing"</td>
+<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;T[hank you for your order!]&gt; but was:&lt;T[HANK YOU FOR YOUR ORDER 2]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:42)
+	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
+	at ?.A confirmation message &quot;THANK YOU FOR YOUR ORDER 2&quot; should be displayed on the screen(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/OnlineShopping.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1854415464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1854415464'><pre>junit.framework.ComparisonFailure: expected:&lt;T[hank you for your order!]&gt; but was:&lt;T[HANK YOU FOR YOUR ORDER 2]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:42)
+	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
+	at ?.A confirmation message &quot;THANK YOU FOR YOUR ORDER 2&quot; should be displayed on the screen(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/OnlineShopping.feature:12)
+</pre></div></td>
+<td>11</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -101,65 +118,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "API Testing"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Weather By City", "Weather API Testing"</td>
+<td></td>
+<td>1</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
+<tr>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "Country Zip Code API Testing"</td>
 <td></td>
 <td>2</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "API Testing"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "Country Zip Code API Testing"</td>
 <td></td>
 <td>0</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "API Testing"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place By Country and Zip Code", "Country Zip Code API Testing"</td>
 <td></td>
 <td>0</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Map Navigation", "Android Google Maps"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Map Navigation", "Android Google Maps Testing"</td>
 <td></td>
-<td>46</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>61</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database"</td>
-<td></td>
-<td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
-<tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MySQL DB Testing", "MySQL Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Firefox Online Shopping", "Web UI Testing"</td>
+<td></td>
+<td>14</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
+<tr>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 <tr>
-<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database"</td>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database Testing"</td>
 <td></td>
 <td>1</td>
-<td>runner.AllFeaturesRunner@4c12331b</td></tr>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
+<tr>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SQLServer DB Testing", "SQLServer Database Testing"</td>
+<td></td>
+<td>1</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
+<tr>
+<td title='runner.AllFeaturesRunner.runScenario()'><b>runScenario</b><br>Test class: runner.AllFeaturesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Exploratory Test", "Android Universal App Testing"</td>
+<td></td>
+<td>37</td>
+<td>runner.AllFeaturesRunner@1573f9fc</td></tr>
 </table><p>
 </body>
 </html>

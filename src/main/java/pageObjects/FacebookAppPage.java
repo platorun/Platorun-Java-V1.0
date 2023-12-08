@@ -44,7 +44,7 @@ public class FacebookAppPage extends PageBase {
     @AndroidFindBy(xpath = "//android.widget.EditText[contains(@text,'Password')]")
     MobileElement elementPassword;
     public void openFacebook() {
-        clickMobile(popupSkip);
+        //clickMobile(popupSkip);
         clickMobile(newAccount);
         clickMobile(popupNext);
         clickMobile(popupAllow);

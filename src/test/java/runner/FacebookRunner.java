@@ -7,9 +7,9 @@ import tests.TestBase;
         features="src/test/resources/features/Facebook.feature",
         glue = {"steps"},
         plugin = {"pretty",
-                "html:Reports/platorun_cucumber_test_report.html",
-                "json:Reports/platorun_cucumber_test_report.json",
-                "junit:Reports/platorun_cucumber_test_report.xml",
+                "html:Reports/CucumberReport/platorun_cucumber_test_report.html",
+                "json:Reports/CucumberReport/platorun_cucumber_test_report.json",
+                "junit:Reports/CucumberReport/platorun_cucumber_test_report.xml",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         tags = ("@AppiumAndroidTesting"))

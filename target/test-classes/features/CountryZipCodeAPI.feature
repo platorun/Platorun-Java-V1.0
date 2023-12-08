@@ -1,6 +1,6 @@
-Feature: API Testing
+Feature: Country Zip Code API Testing
 
-  @RestAPITesting @device_Windows @author_AlfredoNatividad
+  @RestAPITesting @device_Windows @author_Tester1
   Scenario Outline: Place By Country and Zip Code
     Given I need to know the name of a place by country and zip code
     When I enter "<CountryCode>" as country code

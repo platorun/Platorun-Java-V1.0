@@ -5,4 +5,4 @@ utils\JsonReader.class
 pageObjects\PageBase.class
 pageObjects\GoogleMapsAppPage.class
 pageObjects\MySQLDatabaseAppPage.class
-pageObjects\CalculatorAppPage.class
+pageObjects\UniversalAppPage.class

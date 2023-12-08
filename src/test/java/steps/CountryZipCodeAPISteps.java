@@ -45,11 +45,6 @@ public class CountryZipCodeAPISteps {
         JsonPath jsonPathEvaluator = response.jsonPath();
         String place = jsonPathEvaluator.get("places[0].'place name'");
         String country = jsonPathEvaluator.get("country");
-        /*
-        System.out.println("Country is " + country + "\n" +
-                "Zip Code is " + zipCode + "\n" +
-                "Place Name is " + place);
-         */
         System.out.println("Actual result is " + place);
         Assert.assertEquals(place,placeName);
     }

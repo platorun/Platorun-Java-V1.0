@@ -1,4 +1,4 @@
-Feature: API Testing
+Feature: Country Zip Code API Testing
 
   @RestAPITesting @device_Windows @author_Tester1
   Scenario Outline: Place By Country and Zip Code

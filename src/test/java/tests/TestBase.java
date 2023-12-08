@@ -41,7 +41,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
 
     public static void mySQLSetup() {
         try {
-            sqlConnection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world?user=root&password=$PQATesting2022");
+            sqlConnection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world?user=root&password=12345678");
         } catch (SQLException ex) {
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getSQLState());
@@ -52,7 +52,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
     public static void SQLServerSetup() {
         try {
             DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-            String sqlConn = "jdbc:sqlserver://PQA-0551LT;encrypt=true;trustServerCertificate=true;databaseName=World;user=sa;password=$PQATesting2022";
+            String sqlConn = "jdbc:sqlserver://PQA-0551LT;encrypt=true;trustServerCertificate=true;databaseName=World;user=sa;password=12345678";
             sqlConnection = DriverManager.getConnection(sqlConn);
         } catch (SQLException ex) {
             System.out.println("SQLException: " + ex.getMessage());

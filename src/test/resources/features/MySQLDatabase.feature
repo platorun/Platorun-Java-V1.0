@@ -1,4 +1,4 @@
-Feature: MySQL Database
+Feature: MySQL Database Testing
 
   @MySQLDatabaseTesting @device_Windows @author_Tester1
   Scenario Outline: MySQL DB Testing

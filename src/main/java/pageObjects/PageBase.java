@@ -2,23 +2,26 @@ package pageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
 
-import java.sql.ResultSet;
+import java.sql.*;
+
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PageBase {
 
+    public AndroidTouchAction actions;
     AppiumDriver appiumDriver;
     WebDriver webDriver;
     MobileElement testMobileElement;
@@ -52,18 +55,14 @@ public class PageBase {
             }
         }
         catch (SQLException ex){
-            // handle any errors
+            // Handle exceptions
             throw new SQLException("Error running SQL statement " + statement);
-            //System.out.println("SQLException: " + ex.getMessage());
-            //System.out.println("SQLState: " + ex.getSQLState());
-            //System.out.println("VendorError: " + ex.getErrorCode());
         }
         finally {
             if (rs != null) {
                 try {
                     rs.close();
                 } catch (SQLException sqlEx) { } // ignore
-
                 rs = null;
             }
 
@@ -71,8 +70,36 @@ public class PageBase {
                 try {
                     stmt.close();
                 } catch (SQLException sqlEx) { } // ignore
-
                 stmt = null;
+            }
+        }
+        return result;
+    }
+    public List<String> executeStoredProcedure(String procedureName, String parameterInput) throws SQLException {
+        ResultSet rs = null;
+        List<String> result = new ArrayList<>();
+        try {
+            String call = "{call " + procedureName + "(?)}";
+            try (CallableStatement stmt = sqlConnection.prepareCall(call)) {
+                stmt.setString(1, parameterInput);
+                if (stmt.execute()) {
+                    rs = stmt.getResultSet();
+                    while (rs.next()) {
+                        result.add(rs.getString(1));
+                    }
+                }
+            }
+        }
+        catch (SQLException ex){
+            // Handle exceptions
+            throw new SQLException("Error running Stored Procedure " + procedureName);
+        }
+        finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException sqlEx) { } // ignore
+                rs = null;
             }
         }
         return result;
@@ -210,5 +237,17 @@ public class PageBase {
             return testWebElement.getText();
         else
             return "";
+    }
+    public void scrollUp(){
+        Dimension dimension = appiumDriver.manage().window().getSize();
+        int scrollStart = (int) (dimension.getHeight() * 0.8);
+        int scrollEnd = (int) (dimension.getHeight() * 0.1);
+
+        actions = new AndroidTouchAction(appiumDriver)
+                .press(PointOption.point(0,scrollStart))
+                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+                .moveTo(PointOption.point(0,scrollEnd))
+                .release()
+                .perform();
     }
 }

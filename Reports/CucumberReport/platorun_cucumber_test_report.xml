@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.431" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="Web UI Testing" name="Chrome Online Shopping - Example #1.1" time="15.765">
-<failure type="junit.framework.ComparisonFailure" message="expected:&lt;T[hank you for your order!]&gt; but was:&lt;T[HANK YOU FOR YOUR ORDER 2]&gt;">
-<![CDATA[junit.framework.ComparisonFailure: expected:<T[hank you for your order!]> but was:<T[HANK YOU FOR YOUR ORDER 2]>
-	at junit.framework.Assert.assertEquals(Assert.java:85)
-	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at pageObjects.OnlineShoppingAppPage.verifyConfirmationMessage(OnlineShoppingAppPage.java:44)
-	at steps.OnlineShoppingSteps.aConfirmationMessageShouldBeDisplayedOnTheScreen(OnlineShoppingSteps.java:34)
-	at ✽.A confirmation message "THANK YOU FOR YOUR ORDER 2" should be displayed on the screen(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/OnlineShopping.feature:10)
+<testsuite name="Cucumber" time="37.586" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Android Universal App Testing" name="Exploratory Test" time="37.282">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="The element 'By.xpath: //android.widget.TextView[contains(@text,'One Inbox to Rule Them All')]' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PQA-0551LT', ip: '10.20.30.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.sherdle.universal, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.sherdle.universal, deviceName: Android Emulator, platformName: android, platformVersion: 12.0, systemPort: 8200, udid: emulator-5554}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-G973N, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 900x1600, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, systemPort: 8200, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1552, left: 0, top: 48, width: 900}, warnings: {}, webStorageEnabled: false}
+Session ID: 8430c2ec-1738-45c3-b7a5-81d691181a0b">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.TextView[contains(@text,'One Inbox to Rule Them All')]' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PQA-0551LT', ip: '10.20.30.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.sherdle.universal, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.sherdle.universal, deviceName: Android Emulator, platformName: android, platformVersion: 12.0, systemPort: 8200, udid: emulator-5554}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-G973N, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 900x1600, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, systemPort: 8200, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1552, left: 0, top: 48, width: 900}, warnings: {}, webStorageEnabled: false}
+Session ID: 8430c2ec-1738-45c3-b7a5-81d691181a0b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pageObjects.UniversalAppPage.ScrollPageUp(UniversalAppPage.java:85)
+	at pageObjects.UniversalAppPage.openUniversalApp(UniversalAppPage.java:66)
+	at steps.UniversalAppSteps.iWantToDoExploratoryTestingOnTheUniversalApp(UniversalAppSteps.java:23)
+	at ✽.I want to do exploratory testing on the Universal App(file:///C:/Alfredo/PQA/Platorun/Platorun-Java-V1.0/src/test/resources/features/UniversalApp.feature:5)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given I want to purchase items online using Google Chrome...................passed
-And I login with my "standard_user" and "secret_sauce" credentials..........passed
-And I add "Sauce Labs Bike Light" to my cart................................passed
-And I checkout and fill in my "Johnny", "Bravo", "90210" shipping details...passed
-When I continue and click Finish............................................passed
-Then A confirmation message "THANK YOU FOR YOUR ORDER 2" should be displayed on the screen.failed
-]]></system-out>
-</testcase>
-<testcase classname="Web UI Testing" name="Firefox Online Shopping - Example #1.1" time="20.862">
-<system-out><![CDATA[
-Given I want to purchase items online using Mozilla Firefox.................passed
-And I login with my "standard_user" and "secret_sauce" credentials..........passed
-And I add "Sauce Labs Bike Light" to my cart................................passed
-And I checkout and fill in my "Johnny", "Bravo", "90210" shipping details...passed
-When I continue and click Finish............................................passed
-Then A confirmation message "Thank you for your order!" should be displayed on the screen.passed
+Given I want to do exploratory testing on the Universal App.................failed
+When I navigate to the menus and elements...................................skipped
+Then The application should bring me to the page with ease..................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

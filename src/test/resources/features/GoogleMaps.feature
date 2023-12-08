@@ -1,4 +1,4 @@
-Feature: Android Google Maps
+Feature: Android Google Maps Testing
 
   @AppiumAndroidTesting @device_Android @author_Tester1
   Scenario Outline: Map Navigation

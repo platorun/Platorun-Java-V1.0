@@ -15,13 +15,15 @@
         <testng.version>6.8</testng.version>
         <io.cucumber.version>7.11.0</io.cucumber.version>
         <extent.reports>5.0.4</extent.reports>
+        <appium.version>7.4.1</appium.version>
+        <gherkin.version>26.0.3</gherkin.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.4.1</version>
+            <version>${appium.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -53,7 +55,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>gherkin</artifactId>
-            <version>26.0.3</version>
+            <version>${gherkin.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -66,23 +68,6 @@
             <artifactId>cucumber-testng</artifactId>
             <version>${io.cucumber.version}</version>
         </dependency>
-        <!--dependency>
-            <groupId>com.vimalselvam</groupId>
-            <artifactId>cucumber-extentsreport</artifactId>
-            <version>3.1.1</version>
-        </dependency-->
-        <!--dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.9</version>
-        </dependency-->
-
-        <!-- Working dependency -->
-        <!--dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports-testng-adapter</artifactId>
-            <version>1.2.2</version>
-        </dependency-->
         <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber7-adapter</artifactId>
@@ -93,18 +78,6 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.27</version>
         </dependency>
-        <!--dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>1.2.6</version>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency-->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -137,13 +110,6 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>12.2.0.jre11</version>
         </dependency>
-
-        <!--dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.6.0</version>
-            <type>maven-plugin</type>
-        </dependency-->
     </dependencies>
     <build>
         <plugins>
